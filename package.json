@@ -2,11 +2,14 @@
   "name": "next-dash",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jatanael.github.io/DashBoard-E-commerce-Next.js/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "dependencies": {
     "chart.js": "^4.2.1",
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
   }
